@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+    --color-canvas: #F8FAFC;
+    --color-surface: #FFFFFF;
+    --color-hero: #0F172A;
+    --color-main: #0F172A;
+    --color-muted: #475569;
+
+    --color-brand-hero: #0F172A;
+
+    --color-brand-mint-bg: #ECFDF5;
+    --color-brand-mint-text: #047857;
+    --color-brand-mint-border: #A7F3D0;
+
+    --color-brand-peach-bg: #FFF7ED;
+    --color-brand-peach-text: #C2410C;
+    --color-brand-peach-border: #FED7AA;
+
+    --color-brand-sky-bg: #EFF6FF;
+    --color-brand-sky-text: #1D4ED8;
+    --color-brand-sky-border: #BFDBFE;
+}
+
+/* Aksesibilitas WCAG AA: Focus ring konsisten pada navigasi keyboard */
+:focus-visible {
+    outline: 2px solid #10B981;
+    outline-offset: 2px;
+}
